@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Text";
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+      180deg,
+      #1d1e28 0.12%,
+      #261c2d 94.84%,
+      #261a2d 100%
+    )
+    no-repeat;
+}
+
+.container {
+  height: 100%;
+  background-image: url(./images/pattern-hills.svg), url(./images/bg-stars.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: 85% bottom, center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-inline: 24px;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.136px;
+  text-transform: uppercase;
+  margin-bottom: 54px;
+  margin-top: 142px;
+}
+
+section {
+  font-size: 120px;
+  color: #fb5e84;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 256px;
+}
+
+.box {
+  background-color: #343650;
+  border-radius: 8px;
+  position: relative;
+  width: 70px;
+  height: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fb5e84;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 71px; /* 197.222% */
+  letter-spacing: -1.08px;
+}
+.date-box {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.date-box h4 {
+  color: #8385a9;
+  text-align: center;
+  font-size: 7px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.959px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(320deg)
+    brightness(104%) contrast(97%);
+}
+
+.attribution {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+  header {
+    color: #fff;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 7.5px;
+    text-transform: uppercase;
+    margin-bottom: 104px;
+    margin-top: 132px;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 100px;
+  }
+
+  .box {
+    position: relative;
+    width: 148px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fb5e84;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 71px; /* 88.75% */
+    letter-spacing: -2.4px;
+  }
+  .date-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .date-box h4 {
+    color: #8385a9;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5.919px;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
